@@ -60,7 +60,7 @@ while true; do
 
         echo "tomcat pid="$javaPids >>$logFileName
 
-        #tomcat故障时，生成dump文件，一遍后面分析故障原因
+        #tomcat故障时，生成dump文件，方便后面分析故障原因
         for loop in $javaPids; do
 
             dumpFileName=$(date "+%Y-%m-%d-%H-%M-%S")
