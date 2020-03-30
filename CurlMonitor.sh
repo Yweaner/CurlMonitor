@@ -44,6 +44,9 @@ while true; do
 
     else
 
+        #只要监测成功就重置tC的值为0
+        tC=0
+
         echo "$(date +"%Y-%m-%d %T") tomcat test success" >>$logFileName
 
         #每60s监测一次tomcat的状态
